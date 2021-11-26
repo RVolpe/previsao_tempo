@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { routerReducer } from '@ngrx/router-store';\nimport { configReducer } from './config/config.reducer';\nexport const reducers = {\n  router: routerReducer,\n  config: configReducer\n};","map":null,"metadata":{},"sourceType":"module"}

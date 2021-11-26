@@ -1,0 +1,17 @@
+<input [(ngModel)]="search"
+       typeaheadOptionField="name"
+       (typeaheadOnSelect)="onSelected($event)"
+       (typeaheadLoading)="loading = $event"
+       [typeahead]="dataSource$"
+       [typeaheadAsync]="true"
+       [typeaheadWaitMs]="400"
+       [typeaheadItemTemplate]="itemTemplate"
+       [disabled]="disabled"
+       class="form-control"
+       placeholder="Pesquisar">
+
+<div *ngIf="loading">Carregando</div>
+
+<ng-template let-item="item" #itemTemplate>
+  <span>{{ item.name }}, {{ item.country }}</span>
+</ng-template>

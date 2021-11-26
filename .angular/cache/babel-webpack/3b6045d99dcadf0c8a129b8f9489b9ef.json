@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { Units } from '../models/units.enum';\nexport function unitToSymbol(unit) {\n  switch (unit) {\n    case Units.Metric:\n      return '˚C';\n\n    case Units.Imperial:\n      return '˚F';\n\n    case Units.SI:\n      return 'K';\n  }\n}","map":null,"metadata":{},"sourceType":"module"}

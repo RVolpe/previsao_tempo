@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { createFeatureSelector, createSelector } from '@ngrx/store';\nexport const selectBookmarksState = createFeatureSelector('bookmarks');\nexport const selectBookmarksList = createSelector(selectBookmarksState, bookmarksState => bookmarksState.list);","map":null,"metadata":{},"sourceType":"module"}
